@@ -66,6 +66,7 @@ class yum_autoupdate (
   $debug_level         = $yum_autoupdate::params::debug_level,
   $error_level         = 0,
   $skip_broken         = false,
+  $assumeyes           = false,
   $update_cmd          = 'default',
   $systemname          = undef,
   $randomwait          = 60) inherits yum_autoupdate::params {
